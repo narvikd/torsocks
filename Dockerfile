@@ -12,7 +12,7 @@ RUN echo '@edge http://dl-cdn.alpinelinux.org/alpine/edge/community' >> /etc/apk
     apk -v add tor@edge curl && \
     rm -rf /var/cache/apk/*
 
-COPY torrc /etc/tor/
+# COPY torrc /etc/tor/
 
 EXPOSE 9150
 
